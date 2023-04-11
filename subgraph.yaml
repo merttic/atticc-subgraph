@@ -14,17 +14,11 @@ dataSources:
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - AdminChanged
-        - BeaconUpgraded
-        - Upgraded
+        - StakeEvent
       abis:
         - name: NFTStaking
           file: ./abis/NFTStaking.json
       eventHandlers:
-        - event: AdminChanged(address,address)
-          handler: handleAdminChanged
-        - event: BeaconUpgraded(indexed address)
-          handler: handleBeaconUpgraded
-        - event: Upgraded(indexed address)
-          handler: handleUpgraded
+        - event: Staked(indexed address,uint256)
+          handler: handleStaked
       file: ./src/nft-staking.ts
