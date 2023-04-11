@@ -1,0 +1,8 @@
+{
+  "mainnet": {
+    "NFTStaking": {
+      "address": "0x150225502fb8a965ac3a986a641d13ad963252b5",
+      "startBlock": 16988696
+    }
+  }
+}
